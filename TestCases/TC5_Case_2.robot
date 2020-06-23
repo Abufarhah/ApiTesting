@@ -11,12 +11,9 @@ ${api_url}  CloudService/api/servers
 Get_base_url
     create session  baseSession  ${base_url}
     ${response}=    get request  baseSession    /${api_url}
-#    log to console  ${response.content}
     ${json_body}=  to json  ${response.content}
-#    log to console  ${json_body}
     ${list}=  convert to list  ${json_body}
     ${countBefore}=  get length   ${list}
-#    log to console  ${countBefore}
     get request  baseSession    /${api_url}/allocate?size=50
     get request  baseSession    /${api_url}/allocate?size=50
     ${response}=    get request  baseSession    /${api_url}
@@ -26,11 +23,5 @@ Get_base_url
     ${countAfter}=  convert to integer  ${countAfter}
     ${countBefore}=  convert to integer  ${countBefore}
     ${countOfCreatedServers}=  EVALUATE  ${countAfter} - ${countBefore}
-#    log to console  ${countOfCreatedServers}
     ${countOfCreatedServers}=    convert to string  ${countOfCreatedServers}
     SHOULD BE EQUAL  ${countOfCreatedServers}   1
-
-
-
-
-

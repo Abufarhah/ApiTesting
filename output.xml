@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.7.7 on win32)" generated="20200623 10:53:22.131" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.7.7 on win32)" generated="20200623 15:29:30.561" rpa="false">
 <suite id="s1" name="TestCases" source="C:\Users\LaythAF\PycharmProjects\ApiTesting\TestCases">
 <suite id="s1-s1" name="TC1 GET Base Url" source="C:\Users\LaythAF\PycharmProjects\ApiTesting\TestCases\TC1_GET_Base_Url.robot">
 <test id="s1-s1-t1" name="Get_base_url">
@@ -9,8 +9,8 @@
 <arg>baseSession</arg>
 <arg>${base_url}</arg>
 </arguments>
-<msg timestamp="20200623 10:53:22.282" level="INFO">Creating Session using : alias=baseSession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200623 10:53:22.281" endtime="20200623 10:53:22.282"></status>
+<msg timestamp="20200623 15:29:30.737" level="INFO">Creating Session using : alias=baseSession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200623 15:29:30.736" endtime="20200623 15:29:30.737"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -22,17 +22,17 @@ given `alias`</doc>
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.294" level="INFO">GET Request : url=http://localhost:8080/CloudService/api 
+<msg timestamp="20200623 15:29:30.749" level="INFO">GET Request : url=http://localhost:8080/CloudService/api 
  path_url=/CloudService/api 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200623 10:53:22.295" level="INFO">GET Response : url=http://localhost:8080/CloudService/api 
+<msg timestamp="20200623 15:29:30.749" level="INFO">GET Response : url=http://localhost:8080/CloudService/api 
  status=200, reason= 
  body=Welcome to the cloud service api 
  </msg>
-<msg timestamp="20200623 10:53:22.295" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20200623 10:53:22.283" endtime="20200623 10:53:22.295"></status>
+<msg timestamp="20200623 15:29:30.750" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200623 15:29:30.738" endtime="20200623 15:29:30.750"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -42,8 +42,8 @@ given `alias`</doc>
 <assign>
 <var>${status_code}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.296" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20200623 10:53:22.295" endtime="20200623 10:53:22.296"></status>
+<msg timestamp="20200623 15:29:30.751" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20200623 15:29:30.751" endtime="20200623 15:29:30.751"></status>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <doc>Converts the given item to a Unicode string.</doc>
@@ -53,8 +53,8 @@ given `alias`</doc>
 <assign>
 <var>${status_code}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.297" level="INFO">${status_code} = 200</msg>
-<status status="PASS" starttime="20200623 10:53:22.296" endtime="20200623 10:53:22.297"></status>
+<msg timestamp="20200623 15:29:30.755" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20200623 15:29:30.755" endtime="20200623 15:29:30.755"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -62,11 +62,11 @@ given `alias`</doc>
 <arg>${status_code}</arg>
 <arg>200</arg>
 </arguments>
-<status status="PASS" starttime="20200623 10:53:22.297" endtime="20200623 10:53:22.298"></status>
+<status status="PASS" starttime="20200623 15:29:30.755" endtime="20200623 15:29:30.756"></status>
 </kw>
-<status status="PASS" starttime="20200623 10:53:22.281" endtime="20200623 10:53:22.298" critical="yes"></status>
+<status status="PASS" starttime="20200623 15:29:30.736" endtime="20200623 15:29:30.756" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200623 10:53:22.160" endtime="20200623 10:53:22.300"></status>
+<status status="PASS" starttime="20200623 15:29:30.594" endtime="20200623 15:29:30.758"></status>
 </suite>
 <suite id="s1-s2" name="TC2 Invalid Input1" source="C:\Users\LaythAF\PycharmProjects\ApiTesting\TestCases\TC2_Invalid_Input1.robot">
 <test id="s1-s2-t1" name="Get_base_url">
@@ -76,8 +76,8 @@ given `alias`</doc>
 <arg>baseSession</arg>
 <arg>${base_url}</arg>
 </arguments>
-<msg timestamp="20200623 10:53:22.308" level="INFO">Creating Session using : alias=baseSession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200623 10:53:22.308" endtime="20200623 10:53:22.309"></status>
+<msg timestamp="20200623 15:29:30.764" level="INFO">Creating Session using : alias=baseSession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200623 15:29:30.764" endtime="20200623 15:29:30.764"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -89,17 +89,17 @@ given `alias`</doc>
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.314" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=150 
+<msg timestamp="20200623 15:29:30.772" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=150 
  path_url=/CloudService/api/servers/allocate?size=150 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200623 10:53:22.315" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=150 
+<msg timestamp="20200623 15:29:30.772" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=150 
  status=200, reason= 
  body=Maximum server size is 100 Giga 
  </msg>
-<msg timestamp="20200623 10:53:22.315" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20200623 10:53:22.309" endtime="20200623 10:53:22.315"></status>
+<msg timestamp="20200623 15:29:30.772" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200623 15:29:30.765" endtime="20200623 15:29:30.772"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -109,8 +109,8 @@ given `alias`</doc>
 <assign>
 <var>${body}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.316" level="INFO">${body} = Maximum server size is 100 Giga</msg>
-<status status="PASS" starttime="20200623 10:53:22.315" endtime="20200623 10:53:22.316"></status>
+<msg timestamp="20200623 15:29:30.773" level="INFO">${body} = Maximum server size is 100 Giga</msg>
+<status status="PASS" starttime="20200623 15:29:30.773" endtime="20200623 15:29:30.773"></status>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <doc>Converts the given item to a Unicode string.</doc>
@@ -120,8 +120,8 @@ given `alias`</doc>
 <assign>
 <var>${body}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.316" level="INFO">${body} = Maximum server size is 100 Giga</msg>
-<status status="PASS" starttime="20200623 10:53:22.316" endtime="20200623 10:53:22.316"></status>
+<msg timestamp="20200623 15:29:30.774" level="INFO">${body} = Maximum server size is 100 Giga</msg>
+<status status="PASS" starttime="20200623 15:29:30.774" endtime="20200623 15:29:30.774"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -131,8 +131,8 @@ given `alias`</doc>
 <assign>
 <var>${Invalid_Response}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.317" level="INFO">${Invalid_Response} = Maximum server size is 100 Giga</msg>
-<status status="PASS" starttime="20200623 10:53:22.317" endtime="20200623 10:53:22.317"></status>
+<msg timestamp="20200623 15:29:30.775" level="INFO">${Invalid_Response} = Maximum server size is 100 Giga</msg>
+<status status="PASS" starttime="20200623 15:29:30.775" endtime="20200623 15:29:30.775"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -140,11 +140,11 @@ given `alias`</doc>
 <arg>${body}</arg>
 <arg>${Invalid_Response}</arg>
 </arguments>
-<status status="PASS" starttime="20200623 10:53:22.317" endtime="20200623 10:53:22.318"></status>
+<status status="PASS" starttime="20200623 15:29:30.776" endtime="20200623 15:29:30.776"></status>
 </kw>
-<status status="PASS" starttime="20200623 10:53:22.308" endtime="20200623 10:53:22.318" critical="yes"></status>
+<status status="PASS" starttime="20200623 15:29:30.763" endtime="20200623 15:29:30.777" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200623 10:53:22.301" endtime="20200623 10:53:22.319"></status>
+<status status="PASS" starttime="20200623 15:29:30.759" endtime="20200623 15:29:30.778"></status>
 </suite>
 <suite id="s1-s3" name="TC3 Invalid Input2" source="C:\Users\LaythAF\PycharmProjects\ApiTesting\TestCases\TC3_Invalid_Input2.robot">
 <test id="s1-s3-t1" name="Get_base_url">
@@ -154,8 +154,8 @@ given `alias`</doc>
 <arg>baseSession</arg>
 <arg>${base_url}</arg>
 </arguments>
-<msg timestamp="20200623 10:53:22.325" level="INFO">Creating Session using : alias=baseSession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200623 10:53:22.324" endtime="20200623 10:53:22.325"></status>
+<msg timestamp="20200623 15:29:30.785" level="INFO">Creating Session using : alias=baseSession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200623 15:29:30.784" endtime="20200623 15:29:30.785"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -167,17 +167,17 @@ given `alias`</doc>
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.334" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=0 
+<msg timestamp="20200623 15:29:30.791" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=0 
  path_url=/CloudService/api/servers/allocate?size=0 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200623 10:53:22.334" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=0 
+<msg timestamp="20200623 15:29:30.791" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=0 
  status=200, reason= 
  body=Minimum server size is 1 Giga 
  </msg>
-<msg timestamp="20200623 10:53:22.334" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20200623 10:53:22.325" endtime="20200623 10:53:22.334"></status>
+<msg timestamp="20200623 15:29:30.792" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200623 15:29:30.786" endtime="20200623 15:29:30.792"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -187,8 +187,8 @@ given `alias`</doc>
 <assign>
 <var>${body}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.335" level="INFO">${body} = Minimum server size is 1 Giga</msg>
-<status status="PASS" starttime="20200623 10:53:22.334" endtime="20200623 10:53:22.335"></status>
+<msg timestamp="20200623 15:29:30.793" level="INFO">${body} = Minimum server size is 1 Giga</msg>
+<status status="PASS" starttime="20200623 15:29:30.793" endtime="20200623 15:29:30.793"></status>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <doc>Converts the given item to a Unicode string.</doc>
@@ -198,8 +198,8 @@ given `alias`</doc>
 <assign>
 <var>${body}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.336" level="INFO">${body} = Minimum server size is 1 Giga</msg>
-<status status="PASS" starttime="20200623 10:53:22.336" endtime="20200623 10:53:22.336"></status>
+<msg timestamp="20200623 15:29:30.794" level="INFO">${body} = Minimum server size is 1 Giga</msg>
+<status status="PASS" starttime="20200623 15:29:30.793" endtime="20200623 15:29:30.794"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -209,8 +209,8 @@ given `alias`</doc>
 <assign>
 <var>${Invalid_Response}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.336" level="INFO">${Invalid_Response} = Minimum server size is 1 Giga</msg>
-<status status="PASS" starttime="20200623 10:53:22.336" endtime="20200623 10:53:22.336"></status>
+<msg timestamp="20200623 15:29:30.794" level="INFO">${Invalid_Response} = Minimum server size is 1 Giga</msg>
+<status status="PASS" starttime="20200623 15:29:30.794" endtime="20200623 15:29:30.794"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -218,11 +218,11 @@ given `alias`</doc>
 <arg>${body}</arg>
 <arg>${Invalid_Response}</arg>
 </arguments>
-<status status="PASS" starttime="20200623 10:53:22.337" endtime="20200623 10:53:22.337"></status>
+<status status="PASS" starttime="20200623 15:29:30.795" endtime="20200623 15:29:30.795"></status>
 </kw>
-<status status="PASS" starttime="20200623 10:53:22.324" endtime="20200623 10:53:22.338" critical="yes"></status>
+<status status="PASS" starttime="20200623 15:29:30.784" endtime="20200623 15:29:30.796" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200623 10:53:22.321" endtime="20200623 10:53:22.339"></status>
+<status status="PASS" starttime="20200623 15:29:30.780" endtime="20200623 15:29:30.797"></status>
 </suite>
 <suite id="s1-s4" name="TC4 Case 1" source="C:\Users\LaythAF\PycharmProjects\ApiTesting\TestCases\TC4_Case_1.robot">
 <test id="s1-s4-t1" name="Get_base_url">
@@ -232,8 +232,8 @@ given `alias`</doc>
 <arg>baseSession</arg>
 <arg>${base_url}</arg>
 </arguments>
-<msg timestamp="20200623 10:53:22.459" level="INFO">Creating Session using : alias=baseSession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200623 10:53:22.459" endtime="20200623 10:53:22.459"></status>
+<msg timestamp="20200623 15:29:30.958" level="INFO">Creating Session using : alias=baseSession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200623 15:29:30.957" endtime="20200623 15:29:30.958"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -245,17 +245,17 @@ given `alias`</doc>
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.882" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers 
+<msg timestamp="20200623 15:29:31.463" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers 
  path_url=/CloudService/api/servers 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200623 10:53:22.883" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers 
+<msg timestamp="20200623 15:29:31.464" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers 
  status=200, reason= 
- body=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:33:43 IDT 2020","active":true},{"serverId":2,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":3,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":4,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:46 IDT 2020","active":true},{"serverId":5,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:47 IDT 2020","active":true},{"serverId":6,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":7,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":8,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:23 IDT 2020","active":true},{"serverId":9,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:24 IDT 2020","active":true},{"serverId":10,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":11,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":12,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:23 IDT 2020","active":true},{"serverId":13,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:24 IDT 2020","active":true},{"serverId":14,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:08 IDT 2020","active":true},{"serverId":15,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:09 IDT 2020","active":true},{"serverId":16,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:13 IDT 2020","active":true},{"serverId":17,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:37 IDT 2020","active":true},{"serverId":18,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:38 IDT 2020","active":true},{"serverId":19,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:41 IDT 2020","active":true},{"serverId":20,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:52 IDT 2020","active":true},{"serverId":21,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:53 IDT 2020","active":true},{"serverId":22,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:56 IDT 2020","active":true},{"serverId":23,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:39 IDT 2020","active":true},{"serverId":24,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:40 IDT 2020","active":true},{"serverId":25,"allocatedSize":50,"freeSize":50,"creationDate":"Tue Jun 23 10:09:43 IDT 2020","active":true}] 
+ body=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 15:19:55 IDT 2020","active":true}] 
  </msg>
-<msg timestamp="20200623 10:53:22.883" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20200623 10:53:22.460" endtime="20200623 10:53:22.883"></status>
+<msg timestamp="20200623 15:29:31.464" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200623 15:29:30.958" endtime="20200623 15:29:31.464"></status>
 </kw>
 <kw name="To Json" library="RequestsLibrary">
 <doc>Convert a string to a JSON object</doc>
@@ -265,10 +265,10 @@ given `alias`</doc>
 <assign>
 <var>${json_body}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.884" level="INFO">To JSON using : content=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:33:43 IDT 2020","active":true},{"serverId":2,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":3,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":4,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:46 IDT 2020","active":true},{"serverId":5,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:47 IDT 2020","active":true},{"serverId":6,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":7,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":8,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:23 IDT 2020","active":true},{"serverId":9,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:24 IDT 2020","active":true},{"serverId":10,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":11,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":12,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:23 IDT 2020","active":true},{"serverId":13,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:24 IDT 2020","active":true},{"serverId":14,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:08 IDT 2020","active":true},{"serverId":15,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:09 IDT 2020","active":true},{"serverId":16,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:13 IDT 2020","active":true},{"serverId":17,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:37 IDT 2020","active":true},{"serverId":18,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:38 IDT 2020","active":true},{"serverId":19,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:41 IDT 2020","active":true},{"serverId":20,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:52 IDT 2020","active":true},{"serverId":21,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:53 IDT 2020","active":true},{"serverId":22,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:56 IDT 2020","active":true},{"serverId":23,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:39 IDT 2020","active":true},{"serverId":24,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:40 IDT 2020","active":true},{"serverId":25,"allocatedSize":50,"freeSize":50,"creationDate":"Tue Jun 23 10:09:43 IDT 2020","active":true}] </msg>
-<msg timestamp="20200623 10:53:22.884" level="INFO">To JSON using : pretty_print=False </msg>
-<msg timestamp="20200623 10:53:22.884" level="INFO">${json_body} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 09:33:43 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 60, 'freeSize': 40, 'creationDate': 'Tue Jun 23 ...</msg>
-<status status="PASS" starttime="20200623 10:53:22.883" endtime="20200623 10:53:22.884"></status>
+<msg timestamp="20200623 15:29:31.465" level="INFO">To JSON using : content=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 15:19:55 IDT 2020","active":true}] </msg>
+<msg timestamp="20200623 15:29:31.465" level="INFO">To JSON using : pretty_print=False </msg>
+<msg timestamp="20200623 15:29:31.465" level="INFO">${json_body} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 15:19:55 IDT 2020', 'active': True}]</msg>
+<status status="PASS" starttime="20200623 15:29:31.464" endtime="20200623 15:29:31.465"></status>
 </kw>
 <kw name="Convert To List" library="Collections">
 <doc>Converts the given ``item`` to a Python ``list`` type.</doc>
@@ -278,8 +278,8 @@ given `alias`</doc>
 <assign>
 <var>${list}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.885" level="INFO">${list} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 09:33:43 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 60, 'freeSize': 40, 'creationDate': 'Tue Jun 23 ...</msg>
-<status status="PASS" starttime="20200623 10:53:22.885" endtime="20200623 10:53:22.885"></status>
+<msg timestamp="20200623 15:29:31.466" level="INFO">${list} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 15:19:55 IDT 2020', 'active': True}]</msg>
+<status status="PASS" starttime="20200623 15:29:31.465" endtime="20200623 15:29:31.466"></status>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <doc>Returns and logs the length of the given item as an integer.</doc>
@@ -289,9 +289,9 @@ given `alias`</doc>
 <assign>
 <var>${countBefore}</var>
 </assign>
-<msg timestamp="20200623 10:53:22.886" level="INFO">Length is 25</msg>
-<msg timestamp="20200623 10:53:22.886" level="INFO">${countBefore} = 25</msg>
-<status status="PASS" starttime="20200623 10:53:22.886" endtime="20200623 10:53:22.886"></status>
+<msg timestamp="20200623 15:29:31.467" level="INFO">Length is 1</msg>
+<msg timestamp="20200623 15:29:31.467" level="INFO">${countBefore} = 1</msg>
+<status status="PASS" starttime="20200623 15:29:31.466" endtime="20200623 15:29:31.467"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -300,16 +300,16 @@ given `alias`</doc>
 <arg>baseSession</arg>
 <arg>/${api_url}/allocate?size=60</arg>
 </arguments>
-<msg timestamp="20200623 10:53:23.278" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=60 
+<msg timestamp="20200623 15:29:31.926" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=60 
  path_url=/CloudService/api/servers/allocate?size=60 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200623 10:53:23.278" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=60 
+<msg timestamp="20200623 15:29:31.926" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=60 
  status=200, reason= 
  body=A server with size: 60 was allocated 
  </msg>
-<status status="PASS" starttime="20200623 10:53:22.887" endtime="20200623 10:53:23.278"></status>
+<status status="PASS" starttime="20200623 15:29:31.467" endtime="20200623 15:29:31.926"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -318,16 +318,16 @@ given `alias`</doc>
 <arg>baseSession</arg>
 <arg>/${api_url}/allocate?size=60</arg>
 </arguments>
-<msg timestamp="20200623 10:53:23.985" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=60 
+<msg timestamp="20200623 15:29:32.555" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=60 
  path_url=/CloudService/api/servers/allocate?size=60 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200623 10:53:23.985" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=60 
+<msg timestamp="20200623 15:29:32.555" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=60 
  status=200, reason= 
  body=A server with size: 60 was allocated 
  </msg>
-<status status="PASS" starttime="20200623 10:53:23.278" endtime="20200623 10:53:23.986"></status>
+<status status="PASS" starttime="20200623 15:29:31.927" endtime="20200623 15:29:32.555"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -339,17 +339,17 @@ given `alias`</doc>
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20200623 10:53:24.712" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers 
+<msg timestamp="20200623 15:29:33.958" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers 
  path_url=/CloudService/api/servers 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200623 10:53:24.712" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers 
+<msg timestamp="20200623 15:29:33.958" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers 
  status=200, reason= 
- body=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:33:43 IDT 2020","active":true},{"serverId":2,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":3,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":4,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:46 IDT 2020","active":true},{"serverId":5,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:47 IDT 2020","active":true},{"serverId":6,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":7,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":8,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:23 IDT 2020","active":true},{"serverId":9,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:24 IDT 2020","active":true},{"serverId":10,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":11,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":12,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:23 IDT 2020","active":true},{"serverId":13,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:24 IDT 2020","active":true},{"serverId":14,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:08 IDT 2020","active":true},{"serverId":15,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:09 IDT 2020","active":true},{"serverId":16,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:13 IDT 2020","active":true},{"serverId":17,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:37 IDT 2020","active":true},{"serverId":18,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:38 IDT 2020","active":true},{"serverId":19,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:41 IDT 2020","active":true},{"serverId":20,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:52 IDT 2020","active":true},{"serverId":21,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:53 IDT 2020","active":true},{"serverId":22,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:56 IDT 2020","active":true},{"serverId":23,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:39 IDT 2020","active":true},{"serverId":24,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:40 IDT 2020","active":true},{"serverId":25,"allocatedSize":50,"freeSize":50,"creationDate":"Tue Jun 23 10:09:43 IDT 2020","active":true},{"serverId":26,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false},{"serverId":27,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false}] 
+ body=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 15:19:55 IDT 2020","active":true},{"serverId":2,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:31 IDT 2020","active":false},{"serverId":3,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:32 IDT 2020","active":false}] 
  </msg>
-<msg timestamp="20200623 10:53:24.712" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20200623 10:53:23.986" endtime="20200623 10:53:24.712"></status>
+<msg timestamp="20200623 15:29:33.958" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200623 15:29:32.556" endtime="20200623 15:29:33.958"></status>
 </kw>
 <kw name="To Json" library="RequestsLibrary">
 <doc>Convert a string to a JSON object</doc>
@@ -359,10 +359,10 @@ given `alias`</doc>
 <assign>
 <var>${json_body}</var>
 </assign>
-<msg timestamp="20200623 10:53:24.713" level="INFO">To JSON using : content=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:33:43 IDT 2020","active":true},{"serverId":2,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":3,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":4,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:46 IDT 2020","active":true},{"serverId":5,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:47 IDT 2020","active":true},{"serverId":6,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":7,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":8,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:23 IDT 2020","active":true},{"serverId":9,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:24 IDT 2020","active":true},{"serverId":10,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":11,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":12,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:23 IDT 2020","active":true},{"serverId":13,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:24 IDT 2020","active":true},{"serverId":14,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:08 IDT 2020","active":true},{"serverId":15,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:09 IDT 2020","active":true},{"serverId":16,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:13 IDT 2020","active":true},{"serverId":17,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:37 IDT 2020","active":true},{"serverId":18,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:38 IDT 2020","active":true},{"serverId":19,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:41 IDT 2020","active":true},{"serverId":20,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:52 IDT 2020","active":true},{"serverId":21,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:53 IDT 2020","active":true},{"serverId":22,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:56 IDT 2020","active":true},{"serverId":23,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:39 IDT 2020","active":true},{"serverId":24,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:40 IDT 2020","active":true},{"serverId":25,"allocatedSize":50,"freeSize":50,"creationDate":"Tue Jun 23 10:09:43 IDT 2020","active":true},{"serverId":26,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false},{"serverId":27,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false}] </msg>
-<msg timestamp="20200623 10:53:24.714" level="INFO">To JSON using : pretty_print=False </msg>
-<msg timestamp="20200623 10:53:24.714" level="INFO">${json_body} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 09:33:43 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 60, 'freeSize': 40, 'creationDate': 'Tue Jun 23 ...</msg>
-<status status="PASS" starttime="20200623 10:53:24.713" endtime="20200623 10:53:24.714"></status>
+<msg timestamp="20200623 15:29:33.959" level="INFO">To JSON using : content=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 15:19:55 IDT 2020","active":true},{"serverId":2,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:31 IDT 2020","active":false},{"serverId":3,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:32 IDT 2020","active":false}] </msg>
+<msg timestamp="20200623 15:29:33.959" level="INFO">To JSON using : pretty_print=False </msg>
+<msg timestamp="20200623 15:29:33.959" level="INFO">${json_body} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 15:19:55 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 0, 'freeSize': 100, 'creationDate': 'Tue Jun 23 ...</msg>
+<status status="PASS" starttime="20200623 15:29:33.959" endtime="20200623 15:29:33.960"></status>
 </kw>
 <kw name="Convert To List" library="Collections">
 <doc>Converts the given ``item`` to a Python ``list`` type.</doc>
@@ -372,8 +372,8 @@ given `alias`</doc>
 <assign>
 <var>${list}</var>
 </assign>
-<msg timestamp="20200623 10:53:24.715" level="INFO">${list} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 09:33:43 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 60, 'freeSize': 40, 'creationDate': 'Tue Jun 23 ...</msg>
-<status status="PASS" starttime="20200623 10:53:24.714" endtime="20200623 10:53:24.715"></status>
+<msg timestamp="20200623 15:29:33.961" level="INFO">${list} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 15:19:55 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 0, 'freeSize': 100, 'creationDate': 'Tue Jun 23 ...</msg>
+<status status="PASS" starttime="20200623 15:29:33.960" endtime="20200623 15:29:33.961"></status>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <doc>Returns and logs the length of the given item as an integer.</doc>
@@ -383,9 +383,9 @@ given `alias`</doc>
 <assign>
 <var>${countAfter}</var>
 </assign>
-<msg timestamp="20200623 10:53:24.715" level="INFO">Length is 27</msg>
-<msg timestamp="20200623 10:53:24.715" level="INFO">${countAfter} = 27</msg>
-<status status="PASS" starttime="20200623 10:53:24.715" endtime="20200623 10:53:24.715"></status>
+<msg timestamp="20200623 15:29:33.961" level="INFO">Length is 3</msg>
+<msg timestamp="20200623 15:29:33.961" level="INFO">${countAfter} = 3</msg>
+<status status="PASS" starttime="20200623 15:29:33.961" endtime="20200623 15:29:33.961"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -395,8 +395,8 @@ given `alias`</doc>
 <assign>
 <var>${countAfter}</var>
 </assign>
-<msg timestamp="20200623 10:53:24.716" level="INFO">${countAfter} = 27</msg>
-<status status="PASS" starttime="20200623 10:53:24.716" endtime="20200623 10:53:24.716"></status>
+<msg timestamp="20200623 15:29:33.962" level="INFO">${countAfter} = 3</msg>
+<status status="PASS" starttime="20200623 15:29:33.962" endtime="20200623 15:29:33.962"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -406,8 +406,8 @@ given `alias`</doc>
 <assign>
 <var>${countBefore}</var>
 </assign>
-<msg timestamp="20200623 10:53:24.717" level="INFO">${countBefore} = 25</msg>
-<status status="PASS" starttime="20200623 10:53:24.717" endtime="20200623 10:53:24.717"></status>
+<msg timestamp="20200623 15:29:33.963" level="INFO">${countBefore} = 1</msg>
+<status status="PASS" starttime="20200623 15:29:33.963" endtime="20200623 15:29:33.963"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -417,8 +417,8 @@ given `alias`</doc>
 <assign>
 <var>${countOfCreatedServers}</var>
 </assign>
-<msg timestamp="20200623 10:53:24.718" level="INFO">${countOfCreatedServers} = 2</msg>
-<status status="PASS" starttime="20200623 10:53:24.717" endtime="20200623 10:53:24.718"></status>
+<msg timestamp="20200623 15:29:33.964" level="INFO">${countOfCreatedServers} = 2</msg>
+<status status="PASS" starttime="20200623 15:29:33.964" endtime="20200623 15:29:33.964"></status>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <doc>Converts the given item to a Unicode string.</doc>
@@ -428,8 +428,8 @@ given `alias`</doc>
 <assign>
 <var>${countOfCreatedServers}</var>
 </assign>
-<msg timestamp="20200623 10:53:24.718" level="INFO">${countOfCreatedServers} = 2</msg>
-<status status="PASS" starttime="20200623 10:53:24.718" endtime="20200623 10:53:24.718"></status>
+<msg timestamp="20200623 15:29:33.965" level="INFO">${countOfCreatedServers} = 2</msg>
+<status status="PASS" starttime="20200623 15:29:33.965" endtime="20200623 15:29:33.965"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -437,11 +437,11 @@ given `alias`</doc>
 <arg>${countOfCreatedServers}</arg>
 <arg>2</arg>
 </arguments>
-<status status="PASS" starttime="20200623 10:53:24.719" endtime="20200623 10:53:24.719"></status>
+<status status="PASS" starttime="20200623 15:29:33.966" endtime="20200623 15:29:33.966"></status>
 </kw>
-<status status="PASS" starttime="20200623 10:53:22.458" endtime="20200623 10:53:24.720" critical="yes"></status>
+<status status="PASS" starttime="20200623 15:29:30.957" endtime="20200623 15:29:33.966" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200623 10:53:22.340" endtime="20200623 10:53:24.721"></status>
+<status status="PASS" starttime="20200623 15:29:30.799" endtime="20200623 15:29:33.968"></status>
 </suite>
 <suite id="s1-s5" name="TC5 Case 2" source="C:\Users\LaythAF\PycharmProjects\ApiTesting\TestCases\TC5_Case_2.robot">
 <test id="s1-s5-t1" name="Get_base_url">
@@ -451,8 +451,8 @@ given `alias`</doc>
 <arg>baseSession</arg>
 <arg>${base_url}</arg>
 </arguments>
-<msg timestamp="20200623 10:53:24.730" level="INFO">Creating Session using : alias=baseSession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200623 10:53:24.729" endtime="20200623 10:53:24.730"></status>
+<msg timestamp="20200623 15:29:33.980" level="INFO">Creating Session using : alias=baseSession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200623 15:29:33.980" endtime="20200623 15:29:33.980"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -464,17 +464,17 @@ given `alias`</doc>
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20200623 10:53:25.462" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers 
+<msg timestamp="20200623 15:29:35.295" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers 
  path_url=/CloudService/api/servers 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200623 10:53:25.462" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers 
+<msg timestamp="20200623 15:29:35.295" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers 
  status=200, reason= 
- body=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:33:43 IDT 2020","active":true},{"serverId":2,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":3,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":4,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:46 IDT 2020","active":true},{"serverId":5,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:47 IDT 2020","active":true},{"serverId":6,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":7,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":8,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:23 IDT 2020","active":true},{"serverId":9,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:24 IDT 2020","active":true},{"serverId":10,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":11,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":12,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:23 IDT 2020","active":true},{"serverId":13,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:24 IDT 2020","active":true},{"serverId":14,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:08 IDT 2020","active":true},{"serverId":15,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:09 IDT 2020","active":true},{"serverId":16,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:13 IDT 2020","active":true},{"serverId":17,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:37 IDT 2020","active":true},{"serverId":18,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:38 IDT 2020","active":true},{"serverId":19,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:41 IDT 2020","active":true},{"serverId":20,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:52 IDT 2020","active":true},{"serverId":21,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:53 IDT 2020","active":true},{"serverId":22,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:56 IDT 2020","active":true},{"serverId":23,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:39 IDT 2020","active":true},{"serverId":24,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:40 IDT 2020","active":true},{"serverId":25,"allocatedSize":50,"freeSize":50,"creationDate":"Tue Jun 23 10:09:43 IDT 2020","active":true},{"serverId":26,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false},{"serverId":27,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false}] 
+ body=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 15:19:55 IDT 2020","active":true},{"serverId":2,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:31 IDT 2020","active":false},{"serverId":3,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:32 IDT 2020","active":false}] 
  </msg>
-<msg timestamp="20200623 10:53:25.462" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20200623 10:53:24.730" endtime="20200623 10:53:25.462"></status>
+<msg timestamp="20200623 15:29:35.295" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200623 15:29:33.981" endtime="20200623 15:29:35.295"></status>
 </kw>
 <kw name="To Json" library="RequestsLibrary">
 <doc>Convert a string to a JSON object</doc>
@@ -484,10 +484,10 @@ given `alias`</doc>
 <assign>
 <var>${json_body}</var>
 </assign>
-<msg timestamp="20200623 10:53:25.463" level="INFO">To JSON using : content=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:33:43 IDT 2020","active":true},{"serverId":2,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":3,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":4,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:46 IDT 2020","active":true},{"serverId":5,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:47 IDT 2020","active":true},{"serverId":6,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":7,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":8,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:23 IDT 2020","active":true},{"serverId":9,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:24 IDT 2020","active":true},{"serverId":10,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":11,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":12,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:23 IDT 2020","active":true},{"serverId":13,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:24 IDT 2020","active":true},{"serverId":14,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:08 IDT 2020","active":true},{"serverId":15,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:09 IDT 2020","active":true},{"serverId":16,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:13 IDT 2020","active":true},{"serverId":17,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:37 IDT 2020","active":true},{"serverId":18,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:38 IDT 2020","active":true},{"serverId":19,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:41 IDT 2020","active":true},{"serverId":20,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:52 IDT 2020","active":true},{"serverId":21,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:53 IDT 2020","active":true},{"serverId":22,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:56 IDT 2020","active":true},{"serverId":23,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:39 IDT 2020","active":true},{"serverId":24,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:40 IDT 2020","active":true},{"serverId":25,"allocatedSize":50,"freeSize":50,"creationDate":"Tue Jun 23 10:09:43 IDT 2020","active":true},{"serverId":26,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false},{"serverId":27,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false}] </msg>
-<msg timestamp="20200623 10:53:25.463" level="INFO">To JSON using : pretty_print=False </msg>
-<msg timestamp="20200623 10:53:25.464" level="INFO">${json_body} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 09:33:43 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 60, 'freeSize': 40, 'creationDate': 'Tue Jun 23 ...</msg>
-<status status="PASS" starttime="20200623 10:53:25.463" endtime="20200623 10:53:25.464"></status>
+<msg timestamp="20200623 15:29:35.296" level="INFO">To JSON using : content=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 15:19:55 IDT 2020","active":true},{"serverId":2,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:31 IDT 2020","active":false},{"serverId":3,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:32 IDT 2020","active":false}] </msg>
+<msg timestamp="20200623 15:29:35.297" level="INFO">To JSON using : pretty_print=False </msg>
+<msg timestamp="20200623 15:29:35.297" level="INFO">${json_body} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 15:19:55 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 0, 'freeSize': 100, 'creationDate': 'Tue Jun 23 ...</msg>
+<status status="PASS" starttime="20200623 15:29:35.296" endtime="20200623 15:29:35.297"></status>
 </kw>
 <kw name="Convert To List" library="Collections">
 <doc>Converts the given ``item`` to a Python ``list`` type.</doc>
@@ -497,8 +497,8 @@ given `alias`</doc>
 <assign>
 <var>${list}</var>
 </assign>
-<msg timestamp="20200623 10:53:25.464" level="INFO">${list} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 09:33:43 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 60, 'freeSize': 40, 'creationDate': 'Tue Jun 23 ...</msg>
-<status status="PASS" starttime="20200623 10:53:25.464" endtime="20200623 10:53:25.464"></status>
+<msg timestamp="20200623 15:29:35.297" level="INFO">${list} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 15:19:55 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 0, 'freeSize': 100, 'creationDate': 'Tue Jun 23 ...</msg>
+<status status="PASS" starttime="20200623 15:29:35.297" endtime="20200623 15:29:35.298"></status>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <doc>Returns and logs the length of the given item as an integer.</doc>
@@ -508,9 +508,9 @@ given `alias`</doc>
 <assign>
 <var>${countBefore}</var>
 </assign>
-<msg timestamp="20200623 10:53:25.465" level="INFO">Length is 27</msg>
-<msg timestamp="20200623 10:53:25.465" level="INFO">${countBefore} = 27</msg>
-<status status="PASS" starttime="20200623 10:53:25.465" endtime="20200623 10:53:25.465"></status>
+<msg timestamp="20200623 15:29:35.298" level="INFO">Length is 3</msg>
+<msg timestamp="20200623 15:29:35.299" level="INFO">${countBefore} = 3</msg>
+<status status="PASS" starttime="20200623 15:29:35.298" endtime="20200623 15:29:35.299"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -519,16 +519,16 @@ given `alias`</doc>
 <arg>baseSession</arg>
 <arg>/${api_url}/allocate?size=50</arg>
 </arguments>
-<msg timestamp="20200623 10:53:26.202" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=50 
+<msg timestamp="20200623 15:29:36.641" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=50 
  path_url=/CloudService/api/servers/allocate?size=50 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200623 10:53:26.203" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=50 
+<msg timestamp="20200623 15:29:36.641" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=50 
  status=200, reason= 
  body=A server with size: 50 was allocated 
  </msg>
-<status status="PASS" starttime="20200623 10:53:25.465" endtime="20200623 10:53:26.203"></status>
+<status status="PASS" starttime="20200623 15:29:35.299" endtime="20200623 15:29:36.641"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -537,16 +537,16 @@ given `alias`</doc>
 <arg>baseSession</arg>
 <arg>/${api_url}/allocate?size=50</arg>
 </arguments>
-<msg timestamp="20200623 10:53:26.951" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=50 
+<msg timestamp="20200623 15:29:38.251" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers/allocate?size=50 
  path_url=/CloudService/api/servers/allocate?size=50 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200623 10:53:26.951" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=50 
+<msg timestamp="20200623 15:29:38.251" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers/allocate?size=50 
  status=200, reason= 
  body=A server with size: 50 was allocated 
  </msg>
-<status status="PASS" starttime="20200623 10:53:26.203" endtime="20200623 10:53:26.951"></status>
+<status status="PASS" starttime="20200623 15:29:36.642" endtime="20200623 15:29:38.251"></status>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <doc>Send a GET request on the session object found using the
@@ -558,17 +558,17 @@ given `alias`</doc>
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20200623 10:53:27.826" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers 
+<msg timestamp="20200623 15:29:39.773" level="INFO">GET Request : url=http://localhost:8080/CloudService/api/servers 
  path_url=/CloudService/api/servers 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200623 10:53:27.826" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers 
+<msg timestamp="20200623 15:29:39.773" level="INFO">GET Response : url=http://localhost:8080/CloudService/api/servers 
  status=200, reason= 
- body=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:33:43 IDT 2020","active":true},{"serverId":2,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":3,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":4,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:46 IDT 2020","active":true},{"serverId":5,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:47 IDT 2020","active":true},{"serverId":6,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":7,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":8,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:23 IDT 2020","active":true},{"serverId":9,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:24 IDT 2020","active":true},{"serverId":10,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":11,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":12,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:23 IDT 2020","active":true},{"serverId":13,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:24 IDT 2020","active":true},{"serverId":14,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:08 IDT 2020","active":true},{"serverId":15,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:09 IDT 2020","active":true},{"serverId":16,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:13 IDT 2020","active":true},{"serverId":17,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:37 IDT 2020","active":true},{"serverId":18,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:38 IDT 2020","active":true},{"serverId":19,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:41 IDT 2020","active":true},{"serverId":20,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:52 IDT 2020","active":true},{"serverId":21,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:53 IDT 2020","active":true},{"serverId":22,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:56 IDT 2020","active":true},{"serverId":23,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:39 IDT 2020","active":true},{"serverId":24,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:40 IDT 2020","active":true},{"serverId":25,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 10:09:43 IDT 2020","active":true},{"serverId":26,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false},{"serverId":27,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false},{"serverId":28,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:26 IDT 2020","active":false}] 
+ body=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 15:19:55 IDT 2020","active":true},{"serverId":2,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:31 IDT 2020","active":false},{"serverId":3,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:32 IDT 2020","active":false},{"serverId":4,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:36 IDT 2020","active":false}] 
  </msg>
-<msg timestamp="20200623 10:53:27.826" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20200623 10:53:26.952" endtime="20200623 10:53:27.826"></status>
+<msg timestamp="20200623 15:29:39.773" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200623 15:29:38.252" endtime="20200623 15:29:39.773"></status>
 </kw>
 <kw name="To Json" library="RequestsLibrary">
 <doc>Convert a string to a JSON object</doc>
@@ -578,10 +578,10 @@ given `alias`</doc>
 <assign>
 <var>${json_body}</var>
 </assign>
-<msg timestamp="20200623 10:53:27.827" level="INFO">To JSON using : content=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:33:43 IDT 2020","active":true},{"serverId":2,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":3,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:35:18 IDT 2020","active":true},{"serverId":4,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:46 IDT 2020","active":true},{"serverId":5,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:36:47 IDT 2020","active":true},{"serverId":6,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":7,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:10 IDT 2020","active":true},{"serverId":8,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:23 IDT 2020","active":true},{"serverId":9,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:40:24 IDT 2020","active":true},{"serverId":10,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":11,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:42:23 IDT 2020","active":true},{"serverId":12,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:23 IDT 2020","active":true},{"serverId":13,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:43:24 IDT 2020","active":true},{"serverId":14,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:08 IDT 2020","active":true},{"serverId":15,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:44:09 IDT 2020","active":true},{"serverId":16,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:13 IDT 2020","active":true},{"serverId":17,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:37 IDT 2020","active":true},{"serverId":18,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:38 IDT 2020","active":true},{"serverId":19,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:41 IDT 2020","active":true},{"serverId":20,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:52 IDT 2020","active":true},{"serverId":21,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 09:45:53 IDT 2020","active":true},{"serverId":22,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 09:45:56 IDT 2020","active":true},{"serverId":23,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:39 IDT 2020","active":true},{"serverId":24,"allocatedSize":60,"freeSize":40,"creationDate":"Tue Jun 23 10:09:40 IDT 2020","active":true},{"serverId":25,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 10:09:43 IDT 2020","active":true},{"serverId":26,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false},{"serverId":27,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:23 IDT 2020","active":false},{"serverId":28,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 10:53:26 IDT 2020","active":false}] </msg>
-<msg timestamp="20200623 10:53:27.828" level="INFO">To JSON using : pretty_print=False </msg>
-<msg timestamp="20200623 10:53:27.828" level="INFO">${json_body} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 09:33:43 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 60, 'freeSize': 40, 'creationDate': 'Tue Jun 23 ...</msg>
-<status status="PASS" starttime="20200623 10:53:27.827" endtime="20200623 10:53:27.828"></status>
+<msg timestamp="20200623 15:29:39.775" level="INFO">To JSON using : content=[{"serverId":1,"allocatedSize":100,"freeSize":0,"creationDate":"Tue Jun 23 15:19:55 IDT 2020","active":true},{"serverId":2,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:31 IDT 2020","active":false},{"serverId":3,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:32 IDT 2020","active":false},{"serverId":4,"allocatedSize":0,"freeSize":100,"creationDate":"Tue Jun 23 15:29:36 IDT 2020","active":false}] </msg>
+<msg timestamp="20200623 15:29:39.775" level="INFO">To JSON using : pretty_print=False </msg>
+<msg timestamp="20200623 15:29:39.775" level="INFO">${json_body} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 15:19:55 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 0, 'freeSize': 100, 'creationDate': 'Tue Jun 23 ...</msg>
+<status status="PASS" starttime="20200623 15:29:39.774" endtime="20200623 15:29:39.775"></status>
 </kw>
 <kw name="Convert To List" library="Collections">
 <doc>Converts the given ``item`` to a Python ``list`` type.</doc>
@@ -591,8 +591,8 @@ given `alias`</doc>
 <assign>
 <var>${list}</var>
 </assign>
-<msg timestamp="20200623 10:53:27.829" level="INFO">${list} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 09:33:43 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 60, 'freeSize': 40, 'creationDate': 'Tue Jun 23 ...</msg>
-<status status="PASS" starttime="20200623 10:53:27.828" endtime="20200623 10:53:27.829"></status>
+<msg timestamp="20200623 15:29:39.777" level="INFO">${list} = [{'serverId': 1, 'allocatedSize': 100, 'freeSize': 0, 'creationDate': 'Tue Jun 23 15:19:55 IDT 2020', 'active': True}, {'serverId': 2, 'allocatedSize': 0, 'freeSize': 100, 'creationDate': 'Tue Jun 23 ...</msg>
+<status status="PASS" starttime="20200623 15:29:39.776" endtime="20200623 15:29:39.777"></status>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <doc>Returns and logs the length of the given item as an integer.</doc>
@@ -602,9 +602,9 @@ given `alias`</doc>
 <assign>
 <var>${countAfter}</var>
 </assign>
-<msg timestamp="20200623 10:53:27.830" level="INFO">Length is 28</msg>
-<msg timestamp="20200623 10:53:27.830" level="INFO">${countAfter} = 28</msg>
-<status status="PASS" starttime="20200623 10:53:27.829" endtime="20200623 10:53:27.830"></status>
+<msg timestamp="20200623 15:29:39.778" level="INFO">Length is 4</msg>
+<msg timestamp="20200623 15:29:39.778" level="INFO">${countAfter} = 4</msg>
+<status status="PASS" starttime="20200623 15:29:39.778" endtime="20200623 15:29:39.778"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -614,8 +614,8 @@ given `alias`</doc>
 <assign>
 <var>${countAfter}</var>
 </assign>
-<msg timestamp="20200623 10:53:27.830" level="INFO">${countAfter} = 28</msg>
-<status status="PASS" starttime="20200623 10:53:27.830" endtime="20200623 10:53:27.831"></status>
+<msg timestamp="20200623 15:29:39.782" level="INFO">${countAfter} = 4</msg>
+<status status="PASS" starttime="20200623 15:29:39.781" endtime="20200623 15:29:39.782"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -625,8 +625,8 @@ given `alias`</doc>
 <assign>
 <var>${countBefore}</var>
 </assign>
-<msg timestamp="20200623 10:53:27.831" level="INFO">${countBefore} = 27</msg>
-<status status="PASS" starttime="20200623 10:53:27.831" endtime="20200623 10:53:27.831"></status>
+<msg timestamp="20200623 15:29:39.783" level="INFO">${countBefore} = 3</msg>
+<status status="PASS" starttime="20200623 15:29:39.783" endtime="20200623 15:29:39.783"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -636,8 +636,8 @@ given `alias`</doc>
 <assign>
 <var>${countOfCreatedServers}</var>
 </assign>
-<msg timestamp="20200623 10:53:27.832" level="INFO">${countOfCreatedServers} = 1</msg>
-<status status="PASS" starttime="20200623 10:53:27.831" endtime="20200623 10:53:27.832"></status>
+<msg timestamp="20200623 15:29:39.784" level="INFO">${countOfCreatedServers} = 1</msg>
+<status status="PASS" starttime="20200623 15:29:39.784" endtime="20200623 15:29:39.784"></status>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <doc>Converts the given item to a Unicode string.</doc>
@@ -647,8 +647,8 @@ given `alias`</doc>
 <assign>
 <var>${countOfCreatedServers}</var>
 </assign>
-<msg timestamp="20200623 10:53:27.833" level="INFO">${countOfCreatedServers} = 1</msg>
-<status status="PASS" starttime="20200623 10:53:27.832" endtime="20200623 10:53:27.833"></status>
+<msg timestamp="20200623 15:29:39.786" level="INFO">${countOfCreatedServers} = 1</msg>
+<status status="PASS" starttime="20200623 15:29:39.785" endtime="20200623 15:29:39.786"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -656,13 +656,13 @@ given `alias`</doc>
 <arg>${countOfCreatedServers}</arg>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20200623 10:53:27.833" endtime="20200623 10:53:27.833"></status>
+<status status="PASS" starttime="20200623 15:29:39.786" endtime="20200623 15:29:39.787"></status>
 </kw>
-<status status="PASS" starttime="20200623 10:53:24.728" endtime="20200623 10:53:27.834" critical="yes"></status>
+<status status="PASS" starttime="20200623 15:29:33.979" endtime="20200623 15:29:39.787" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200623 10:53:24.723" endtime="20200623 10:53:27.835"></status>
+<status status="PASS" starttime="20200623 15:29:33.974" endtime="20200623 15:29:39.789"></status>
 </suite>
-<status status="PASS" starttime="20200623 10:53:22.133" endtime="20200623 10:53:27.838"></status>
+<status status="PASS" starttime="20200623 15:29:30.563" endtime="20200623 15:29:39.792"></status>
 </suite>
 <statistics>
 <total>
