@@ -34,16 +34,3 @@ Get_base_url
 
 
 
-
-
-
-#    ${body}=  set variable  ${response.content}
-#    ${body}=  convert to string  ${body}
-#    log to console  ${body}
-#    ${Invalid_Response}=    set variable   Minimum server size is 1 Giga
-#    should contain  ${body}  ${Invalid_Response}
-
-
-
-
-
