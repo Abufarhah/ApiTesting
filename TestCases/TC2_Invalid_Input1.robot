@@ -13,7 +13,7 @@ Get_base_url
 #    log to console  ${response.content}
     ${body}=  set variable  ${response.content}
     ${body}=  convert to string  ${body}
-    log to console  ${body}
+#    log to console  ${body}
     ${Invalid_Response}=    set variable   Maximum server size is 100 Giga
     should contain  ${body}  ${Invalid_Response}
 

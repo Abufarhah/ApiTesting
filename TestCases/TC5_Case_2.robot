@@ -17,8 +17,8 @@ Get_base_url
     ${list}=  convert to list  ${json_body}
     ${countBefore}=  get length   ${list}
 #    log to console  ${countBefore}
-    get request  baseSession    /${api_url}/allocate?size=60
-    get request  baseSession    /${api_url}/allocate?size=60
+    get request  baseSession    /${api_url}/allocate?size=50
+    get request  baseSession    /${api_url}/allocate?size=50
     ${response}=    get request  baseSession    /${api_url}
     ${json_body}=  to json  ${response.content}
     ${list}=  convert to list  ${json_body}
@@ -28,7 +28,7 @@ Get_base_url
     ${countOfCreatedServers}=  EVALUATE  ${countAfter} - ${countBefore}
 #    log to console  ${countOfCreatedServers}
     ${countOfCreatedServers}=    convert to string  ${countOfCreatedServers}
-    SHOULD BE EQUAL  ${countOfCreatedServers}   2
+    SHOULD BE EQUAL  ${countOfCreatedServers}   1
 
 
 
